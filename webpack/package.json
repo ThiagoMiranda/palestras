@@ -2,15 +2,15 @@
   "name": "comparison",
   "version": "1.0.0",
   "description": "",
-  "main": "lib/sumlib.js",
-  "module": "lib/sumlib.module.js",
-  "cjs": "lib/sumlib.cjs.js",
+  "main": "sumlib.js",
+  "module": "sumlib.module.js",
+  "cjs": "sumlib.cjs.js",
   "files": [
     "lib"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c rollup.config.js"
+    "build": "webpack --config webpack.config.js --mode development"
   },
   "author": "",
   "license": "ISC",
@@ -18,8 +18,9 @@
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.1",
     "@babel/preset-env": "^7.0.0",
-    "rollup": "^0.65.2",
-    "rollup-plugin-babel": "^4.0.3"
+    "babel-loader": "^8.0.2",
+    "webpack": "^4.19.0",
+    "webpack-cli": "^3.1.0"
   },
   "dependencies": {}
 }
