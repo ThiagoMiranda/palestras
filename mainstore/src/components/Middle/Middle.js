@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 class middle extends React.Component {
   render() {
@@ -178,10 +179,10 @@ class middle extends React.Component {
                       </a>
                     </li>
                     <li>
-                      <a href="contact.html">
-                        Contact
+                      <Link to="/aboutus">
+                        Sobre a gente
                         <i className="fas fa-chevron-down" />
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>

@@ -1,5 +1,7 @@
 import React from "react";
 
+import truck from '../../assets/images/Icones/truck.svg'
+
 class delivery extends React.Component {
   render() {
     return (
@@ -10,7 +12,7 @@ class delivery extends React.Component {
             <div className="col-lg-3 col-md-6 char_col">
               <div className="char_item d-flex flex-row align-items-center justify-content-start">
                 <div className="char_icon">
-                  <img src="images/char_1.png" alt />
+                  <img src={truck} alt />
                 </div>
                 <div className="char_content">
                   <div className="char_title">Free Delivery</div>

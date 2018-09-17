@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 class pageMenu extends React.Component {
   render() {
@@ -224,10 +225,10 @@ class pageMenu extends React.Component {
                     </a>
                   </li>
                   <li className="page_menu_item">
-                    <a href="contact.html">
-                      contact
+                    <Link to='/aboutus'>
+                      Sobre a gente
                       <i className="fa fa-angle-down" />
-                    </a>
+                    </Link>
                   </li>
                 </ul>
                 <div className="menu_contact">
