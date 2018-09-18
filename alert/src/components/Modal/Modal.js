@@ -1,46 +1,28 @@
-import React, { PureComponent } from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
-import { createPortal } from 'react-dom'
 
 import './Modal.scss'
 
-class Modal extends PureComponent {
-  state = {
-    isOpen: false
-  }
-
-  constructor (props) {
-    super(props)
-    if (typeof document !== 'undefined') {
-      this.container = document.createElement('div')
-    }
-  }
-
-  open = content => {
-    if (typeof document !== 'undefined') {
-      document.body.appendChild(this.container)
-    }
-    this.setState({isOpen: true})
-  }
-
-  close = () => {
-    this.setState({isOpen: false})
-  }
-
-  render () {
-    const { isOpen } = this.state
-    const { children } = this.props
-    
-    return (isOpen) ? createPortal(children, this.container) : null
-  }
+const Modal =  ({ children, toggleModal }) => {
+  return (
+    <div className='modal'>
+      <div className='backdrop' onClick={() => { toggleModal() }} />
+      <div className='content'>
+        <div className='close-button' onClick={() => { toggleModal() }}>Fechar</div>
+        { children }
+      </div>
+    </div>
+  )
 }
 
 Modal.propTypes = {
-  children: PropTypes.any
+  children: PropTypes.any,
+  toggleModal: PropTypes.func
 }
 
 Modal.defaultProps = {
-  children: <div />
+  children: <Fragment />,
+  toggleModal: () => {}
 }
 
 export default Modal
