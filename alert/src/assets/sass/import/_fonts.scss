@@ -1,4 +1,0 @@
-@import 'variables';
-
-@include generateFontSizeClasses($font-sizes, $grid-breakpoints);
-@include generateFontWeightClasses($font-weights);
