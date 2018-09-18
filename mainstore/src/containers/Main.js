@@ -6,6 +6,8 @@ import Banner from '../components/Banner/Banner'
 import Delivery from '../components/Delivery/Delivery'
 import Categories from '../components/Categories/Categories'
 
+import '../assets/styles/main_styles.css';
+
 class Main extends Component {
   render() {
     return (
