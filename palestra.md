@@ -3,3 +3,7 @@ Para automatizar tarefas como importar scripts, dependências, compactar e criar
 Webpack e Rollup
 	- Rollup ficou famoso depois de um PR "gigante" da equipe do React passando seu bundler para o framework: https://github.com/facebook/react/pull/9327
 	- Outros frameworks o adotaram como o Vuejs, Ember, Preact, D3, Three.js, Moment e cia.
+
+	Diferenças:
+		- Rollup tem polyfills para import/export
+		- Suporta paths relativos ( webpack precisa do path.resolve/path.join )
