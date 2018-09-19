@@ -5,10 +5,10 @@ import './Modal.scss'
 
 const Modal =  ({ children, toggleModal }) => {
   return (
-    <div className='modal'>
-      <div className='backdrop' onClick={() => { toggleModal() }} />
-      <div className='content'>
-        <div className='close-button' onClick={() => { toggleModal() }}>Fechar</div>
+    <div className='my-modal'>
+      <div className='my-modal__backdrop' onClick={() => { toggleModal() }} />
+      <div className='my-modal__content'>
+        <div className='my-modal__close-button' onClick={() => { toggleModal() }}>Fechar</div>
         { children }
       </div>
     </div>

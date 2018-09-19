@@ -6,25 +6,25 @@ import 'font-awesome/css/font-awesome.css'
 
 class TestePage extends PureComponent {
   state = {
-    alert = false
+    alert: true
   }
   constructor (props) {
     super(props)
   }
   
   toggleModal = () => {
+    console.log('bla')
     this.setState(oldState => ({ alert: !oldState.alert }))
   }
 
   render() {
     const { alert } = this.state
+    const modal = <Alert toggleModal={this.toggleModal}>blablabla</Alert>
     return (
       <Fragment>
-        <a href='#' className='' onClick={this.openModal}>Abrir Modal!</a>
+        <a href='#' className='' onClick={this.toggleModal}>Abrir Modal!</a>
         <div className='container'>
-          <Alert toggleModal={this.toggleModal}>
-            blablabla
-          </Alert>
+          {alert ? modal : ''}
         </div>
       </Fragment>
     )
