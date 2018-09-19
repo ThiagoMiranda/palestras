@@ -7,3 +7,45 @@ Webpack e Rollup
 	Diferenças:
 		- Rollup tem polyfills para import/export
 		- Suporta paths relativos ( webpack precisa do path.resolve/path.join )
+
+
+- O que é um componente?
+	- Componentes são blocos de construção do React
+	- Funcionam como uma planta de uma casa
+	- Uma aplicação React terá vários desses.
+	- Pode ser uma função ( stateless/functional ) ou uma classe ( stateful )
+
+	** foto de um functional/stateless **
+	** foto de um stafeful **
+
+	- Diferenças:
+		- Stateless: 
+			- Componentes de apresentação
+			- Não possuem state, lifecycles ou ref
+			- São previsíveis
+			- Normalmente terá mais stateless que stateful
+			- ReactDOM renderiza um elemento DOM
+		- Stateful
+			- Componentes que controlam a lógica
+			- Normalmente usados em containers contendo vários stateless
+			- Contém handlers, chamadas ajax, etc
+			- São instanciados como classes
+			- Possuem lifecycles, states e ref	
+			- ReactDOM renderiza elementos DOMs "anexados" a instâncias de componentes ( e o DOM retornado pela render() )		
+
+
+- Antigamente
+	- Tag script
+	- Sequência correta de scripts
+	- RequireJS
+
+- Soluções ( Grunt, Gulp, Webpack, Roll up, Parcel )
+- Porque roll up? 
+- Diferença tamanho do bundle ( Webpack x Rollup )
+- Fazer um componente
+- Página 3 rotas 
+- Modal em uma delas
+- Transferir o modal para a pasta /components
+- Transferir modal para uma lib
+- Publicação npm/yarn ou Nexus ( procurar concorrentes ) // https://unpkg.com/
+- Falar sobre AMD, CJS, ES
