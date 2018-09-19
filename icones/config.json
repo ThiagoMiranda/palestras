@@ -1,0 +1,108 @@
+{
+    "FIGMA_BASE_URL": "https://api.figma.com/v1",
+    "FIGMA_FILE_ID": "Jc9v9GjQIljbkzdcmjE1S1RX",
+    "FIGMA_TOKEN": "3718-e87fe06d-910e-4a74-8df6-f6465be404e5",
+    "svgo": {
+        "options": [
+            {
+                "cleanupAttrs": true
+            },
+            {
+                "removeDoctype": true
+            },
+            {
+                "removeXMLProcInst": true
+            },
+            {
+                "removeComments": true
+            },
+            {
+                "removeMetadata": true
+            },
+            {
+                "removeTitle": true
+            },
+            {
+                "removeDesc": true
+            },
+            {
+                "removeUselessDefs": false
+            },
+            {
+                "removeEditorsNSData": true
+            },
+            {
+                "removeEmptyAttrs": true
+            },
+            {
+                "removeHiddenElems": true
+            },
+            {
+                "removeEmptyText": true
+            },
+            {
+                "removeViewBox": false
+            },
+            {
+                "cleanupEnableBackground": true
+            },
+            {
+                "convertStyleToAttrs": true
+            },
+            {
+                "convertColors": true
+            },
+            {
+                "convertPathData": true
+            },
+            {
+                "convertTransform": true
+            },
+            {
+                "removeUnknownsAndDefaults": true
+            },
+            {
+                "removeNonInheritableGroupAttrs": true
+            },
+            {
+                "removeUselessStrokeAndFill": true
+            },
+            {
+                "removeUnusedNS": true
+            },
+            {
+                "cleanupIDs": false
+            },
+            {
+                "cleanupNumericValues": true
+            },
+            {
+                "moveElemsAttrsToGroup": true
+            },
+            {
+                "moveGroupAttrsToElems": true
+            },
+            {
+                "collapseGroups": true
+            },
+            {
+                "removeRasterImages": false
+            },
+            {
+                "mergePaths": true
+            },
+            {
+                "convertShapeToPath": true
+            },
+            {
+                "sortAttrs": true
+            },
+            {
+                "removeDimensions": true
+            },
+            {
+                "removeEmptyContainers": true
+            }
+        ]
+    }
+}

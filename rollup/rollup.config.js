@@ -37,7 +37,6 @@ export default {
         }
     ],
     experimentalCodeSplitting: true,
-    experimentalDynamicImport: true,
     plugins: [
         babel()
     ]
