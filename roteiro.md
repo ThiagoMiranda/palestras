@@ -13,7 +13,7 @@ Glauber:
 - √ Deixar preparado alguns ícones
 - √ Gerar chave
 
-- Gerar um pequeno exemplo de um componente em SCSS - OOCSS + BEM
+- Gerar um pequeno exemplo de um componente em SCSS - OOCSS + BEM (Encapsulamento)
     (Lembrar que o foco não é esse, pois o diferencial está nas outras duas pontas do projeto)
 
 Thiago:
