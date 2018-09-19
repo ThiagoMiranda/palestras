@@ -2,7 +2,7 @@ import React, { Fragment, PureComponent } from 'react';
 import ReactDOM from 'react-dom';
 import Alert from 'alert-modal'
 
-import 'font-awesome/css/font-awesome.css'
+import '../../lib/ac.css'
 
 class TestePage extends PureComponent {
   state = {
