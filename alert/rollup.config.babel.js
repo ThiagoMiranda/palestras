@@ -2,6 +2,7 @@ import babel from 'rollup-plugin-babel'
 import resolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
 import replace from 'rollup-plugin-replace'
+import postcss from 'rollup-plugin-postcss'
 import scss from 'rollup-plugin-scss'
 import uglify from 'rollup-plugin-uglify-es'
 import copy from 'rollup-plugin-copy-assets'
@@ -34,7 +35,14 @@ export default {
     experimentalDynamicImport: true,
     sourcemap: true,
     plugins: [
-        scss(),
+        postcss({
+            extract: true,
+            minimize: true,
+            sourceMap: true
+        }),
+        scss({
+            output: false
+        }),
         babel({
             exclude: 'node_modules/**'
         }),
