@@ -1,0 +1,49 @@
+{
+  "name": "icones",
+  "version": "0.1.0",
+  "author": "Glauber Roque, Thiago Miranda de Oliveira",
+  "main": "lib/iconesvgs.js",
+  "module": "lib/iconesvgs.module.js",
+  "files": [
+    "lib"
+  ],
+  "description": "",
+  "scripts": {
+    "start": "nodemon server/index.js --exec babel-node --presets @babel/preset-env",
+    "prebuild": "rm -rf ./lib && rm -rf ./src/**/* && babel server -d dist --exec babel-node --presets @babel/preset-env",
+    "preserve": "npm run build",
+    "build": "node dist/index.js && ./node_modules/.bin/babel ./lib/ --out-dir ./lib/",
+    "test": "mocha --compilers js:@babel/register",
+    "prepublish": "npm run build"
+  },
+  "publishConfig": {
+    "registry": "http://10.0.0.163:8081/repository/npm-private/"
+  },
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/bancointersa-ioasys/inter-frontend-svgs#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/node": "^7.0.0",
+    "@babel/plugin-proposal-async-generator-functions": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-decorators": "^7.0.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
+    "@babel/plugin-proposal-function-sent": "^7.0.0",
+    "@babel/plugin-proposal-json-strings": "^7.0.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.0.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-syntax-import-meta": "^7.0.0",
+    "@babel/plugin-transform-react-jsx": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "axios": "^0.18.0",
+    "chalk": "^2.4.1",
+    "nodemon": "^1.10.0",
+    "svgo": "^1.0.5"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0"
+  }
+}
