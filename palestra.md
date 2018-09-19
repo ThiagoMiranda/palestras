@@ -19,7 +19,7 @@ Webpack e Rollup
 	** foto de um stafeful **
 
 	- Diferenças:
-		- Stateless: 
+		- Stateless:
 			- Componentes de apresentação
 			- Não possuem state, lifecycles ou ref
 			- São previsíveis
@@ -30,22 +30,55 @@ Webpack e Rollup
 			- Normalmente usados em containers contendo vários stateless
 			- Contém handlers, chamadas ajax, etc
 			- São instanciados como classes
-			- Possuem lifecycles, states e ref	
-			- ReactDOM renderiza elementos DOMs "anexados" a instâncias de componentes ( e o DOM retornado pela render() )		
+			- Possuem lifecycles, states e ref
+			- ReactDOM renderiza elementos DOMs "anexados" a instâncias de componentes ( e o DOM retornado pela render() )
 
 
 - Antigamente
 	- Tag script
 	- Sequência correta de scripts
-	- RequireJS
+	- Revealing module pattern
+		- Prós: - Fácil de implementar sem precisar de libs
+				- Vários módulos podem ser definidos em um mesmo arquivo
+		- Contra: - Não consegue carregar módulos programaticamente
+				  - Dependências devem ser manuais
+				  - Não é possível loading async
+
+	** exemplo revealing module pattern **
+- AMD, CJS e ES
+	- O que são módulos?
+		- Pequenas unidades de código independentes e reusáveis
+		- Encapsulados
+		- Independem da ordem de carregamento ( podem ser carregados async )
+	** foto commonjs **
+	- CommonJS:
+		- Foi feita pensando no NodeJS
+		- Simples
+		- Suporta dependências circulares
+		- Require pode ser chamado sempre
+		- Para browsers é preciso uma lib de carregamento ou babel
+		- Um arquivo por módulo
+	** foto amd **
+	- AMD ( RequireJS )
+		- Uma função callback é chamada assim que as dependências são carregadas
+		- Compatibilidade com require e exports
+		- Gerenciamento de dependências
+		- Necessário libs como RequireJS
+	** foto es6 **
+	- Es6 Modules
+		- Suport sync e async
+		- Fácil de entender
+		- É uma especificação "oficial" que será suportada pelos browsers
+		- Pouco suporte ( use Babel )
 
 - Soluções ( Grunt, Gulp, Webpack, Roll up, Parcel )
-- Porque roll up? 
-- Diferença tamanho do bundle ( Webpack x Rollup )
+- Porque roll up?
 - Fazer um componente
-- Página 3 rotas 
+- Página 3 rotas
 - Modal em uma delas
 - Transferir o modal para a pasta /components
 - Transferir modal para uma lib
 - Publicação npm/yarn ou Nexus ( procurar concorrentes ) // https://unpkg.com/
-- Falar sobre AMD, CJS, ES
+
+https://medium.com/@kelin2025/writing-js-libraries-less-than-1tb-size-6342da0c006a
+https://auth0.com/blog/javascript-module-systems-showdown/

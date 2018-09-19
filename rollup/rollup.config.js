@@ -9,6 +9,21 @@ export default {
             name: 'SumLib',
             file: pkg.main,
             format: 'umd'
+		},
+		{
+            name: 'SumLib',
+            file: pkg.amd,
+            format: 'amd'
+		},
+		{
+            name: 'SumLib',
+            file: pkg.iife,
+            format: 'iife'
+		},
+		{
+            name: 'SumLib',
+            file: pkg.system,
+            format: 'system'
         },
         {
             name: 'SumLib',
@@ -24,7 +39,6 @@ export default {
     experimentalCodeSplitting: true,
     experimentalDynamicImport: true,
     plugins: [
-        babel(),
-        uglify()
+        babel()
     ]
 }

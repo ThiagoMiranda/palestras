@@ -5,6 +5,9 @@
   "main": "lib/sumlib.js",
   "module": "lib/sumlib.module.js",
   "cjs": "lib/sumlib.cjs.js",
+  "amd": "lib/sumlib.amd.js",
+  "iife": "lib/sumlib.iife.js",
+  "system": "lib/submlib.system.js",
   "files": [
     "lib"
   ],
