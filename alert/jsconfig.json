@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "allowSyntheticDefaultImports": false,
+    "baseUrl": "./",
+    "paths": {
+      "assets/*": ["src/assets/*"],
+      "components/*": ["src/components/*"],
+      "shared/*": ["src/shared/*"],
+      "locales/*": ["src/locales/*"],
+    }
+  },
+  "exclude": ["node_modules", "lib", "public", ".cache"]
+}

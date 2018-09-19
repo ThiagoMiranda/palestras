@@ -3,15 +3,18 @@ Glauber:
 - O que é Figma?
 - Antigamente ( estar na máquina do fulano, pouca transparência )
 - Soluções concorrentes ( Sketch, Zeplin, Marvel, Invision )
-- Porque Figma?
-- Figma API
 - Introdução ao Figma
 - Estilização
 - Componentização
+
+- Porque Figma?
 - Versionamento ( trabalho em time )
 
-- PRONTO: Deixar preparado alguns ícones
-- PRONTO: Gerar chave
+- √ Deixar preparado alguns ícones
+- √ Gerar chave
+
+- Gerar um pequeno exemplo de um componente em SCSS - OOCSS + BEM
+    (Lembrar que o foco não é esse, pois o diferencial está nas outras duas pontas do projeto)
 
 Thiago:
 
@@ -37,7 +40,11 @@ Glauber e Thiago:
 
 - Componente de ponta a ponta
 - Porque usar SVG e não fonte
+  - Semanticamente correto
+  - Dicas de como desenhar um SVG (Flat em caso de mudanças de cor)
+  - Manter todo o ícone desagrupado
 - SVG como componentes React
+- Figma API - Falar aqui sobre o 
 - Lib integrada com o Figma
 - Exemplo de uso: SVG e REACT
 - Autonomia para designer e desenvolvedores
