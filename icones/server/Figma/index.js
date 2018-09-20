@@ -1,7 +1,7 @@
 import axios from 'axios'
 import SVGO from 'svgo'
 
-import { createFolder } from '../file'
+import { createFolder, readFiles } from '../file'
 import { log } from '../shared/utils'
 
 import config from '../../config.json'
@@ -25,8 +25,9 @@ class InterFigma {
     svgsInfo = []
     svgBodyMap = {}
 
-    constructor() {
+    constructor(cb) {
         createFolder('lib')
+        this.callback = cb
     }
 
     requestFigma = url => {
@@ -60,10 +61,9 @@ class InterFigma {
         const svgIds = vectorList.map(item => item.id)
         
         this.createCategoriesFolders()
-        await this.getSvgsURLs(svgIds, vectorList)
-        await this.getSvgsBodies()
-        return this.svgBodyMap
-
+        readFiles('svg', this.getSvgBody)
+        //  await this.getSvgsURLs(svgIds, vectorList)
+        //  await this.getSvgsBodies()
     }
 
     createCategoriesFolders = () => {
@@ -88,6 +88,13 @@ class InterFigma {
             return response
         })
         await Promise.all(symbolsPromiseMap)
+    }
+
+    getSvgBody = async ({ body, folder, width, height, name, blendMode }) => {
+        const svgBody = blendMode !== 'LUMINOSITY' ? await svgoWithFill.optimize(body) : await svgoWithoutFill.optimize(body)
+        const dest = `${folder}/${name.toLowerCase()}`
+        this.svgBodyMap[`${dest}`] = { body: svgBody.data, width, height }
+        this.callback(this.svgBodyMap)
     }
 
 }
