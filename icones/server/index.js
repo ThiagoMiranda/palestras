@@ -6,11 +6,11 @@ import createReactSvgs from './react'
 import { log } from './shared/utils'
 
 log('Iniciado processo de build...', 'green')
-const figma = new Figma()
-figma.getCategories().then(svgBodyMap => {
+const figma = new Figma((svgBodyMap) => {
   log('Criando arquivos svgs...', 'blue')
   createSvgsFiles(svgBodyMap)
   log('Criando arquivos react...', 'blue')
   createReactSvgs(svgBodyMap)
   log('Processo completado com sucesso!!!', 'green')
 })
+figma.getCategories()
