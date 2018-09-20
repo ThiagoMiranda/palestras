@@ -70,7 +70,15 @@ Para automatizar tarefas como importar scripts, dependências, compactar e criar
 		- Fácil de entender
 		- É uma especificação "oficial" que será suportada pelos browsers
 		- Pouco suporte ( use Babel )
-	- System	
+	- System
+
+- Package.json
+	- name: nome do pacote
+	- version: Versão do pacote. Recomendável usar o padrão SEMVER mas não obrigatório.
+	- main: arquivo de entrada. Ao usar o "require" do Nodejs esse será o chamado.
+	- files: opcional. Será o diretório(s) carregado dentro do node_modules no npm install
+	- browser: o mesmo que o main para pacotes client side
+
 
 - Soluções ( Grunt, Gulp, Webpack, Roll up, Parcel )
 - Porque roll up?
