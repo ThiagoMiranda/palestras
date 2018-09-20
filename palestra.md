@@ -78,6 +78,7 @@ Para automatizar tarefas como importar scripts, dependências, compactar e criar
 	- main: arquivo de entrada. Ao usar o "require" do Nodejs esse será o chamado.
 	- files: opcional. Será o diretório(s) carregado dentro do node_modules no npm install
 	- browser: o mesmo que o main para pacotes client side
+	- peerDependencies: Dependências necessárias para rodar seu pacote.
 
 
 - Soluções ( Grunt, Gulp, Webpack, Roll up, Parcel )
@@ -91,3 +92,5 @@ Para automatizar tarefas como importar scripts, dependências, compactar e criar
 
 https://medium.com/@kelin2025/writing-js-libraries-less-than-1tb-size-6342da0c006a
 https://auth0.com/blog/javascript-module-systems-showdown/
+https://robots.thoughtbot.com/react-rendering-misconception
+https://medium.freecodecamp.org/higher-order-components-the-ultimate-guide-b453a68bb851
