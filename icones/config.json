@@ -1,7 +1,7 @@
 {
     "FIGMA_BASE_URL": "https://api.figma.com/v1",
-    "FIGMA_FILE_ID": "Jc9v9GjQIljbkzdcmjE1S1RX",
-    "FIGMA_TOKEN": "3718-e87fe06d-910e-4a74-8df6-f6465be404e5",
+    "FIGMA_FILE_ID": "",
+    "FIGMA_TOKEN": "",
     "svgo": {
         "options": [
             {
