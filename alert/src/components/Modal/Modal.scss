@@ -48,3 +48,12 @@
     }
   }
 }
+
+.fill {
+  &--white {
+    fill: white;
+  }
+  &--gray {
+    fill: gray;
+  }
+}
