@@ -8,14 +8,13 @@ import '../../lib/ac.css'
 
 class TestePage extends PureComponent {
   state = {
-    alert: true
+    alert: false
   }
   constructor (props) {
     super(props)
   }
   
   toggleModal = () => {
-    console.log('bla')
     this.setState(oldState => ({ alert: !oldState.alert }))
   }
 
