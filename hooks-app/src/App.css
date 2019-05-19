@@ -35,6 +35,7 @@
   color: white;
   border: 0;
   cursor: pointer;
+  border-radius: 5px;
  }
 
  .input-wrapper.footer {
@@ -47,10 +48,10 @@
 
  .removeButton {
   background: red;
-  color: black;
   font-weight: bold;
   border: 0;
   padding: 1em;
   margin: 1em;
   cursor: pointer;
+  border-radius: 5px;
  }
