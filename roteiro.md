@@ -52,3 +52,53 @@ Glauber e Thiago:
 - Uso de Sass autonomo
 
 - PRONTO: Lib inter-frontend-svgs modificada
+
+UPDATE 19/05
+
+- Wrapper hell
+- Problemas com classes
+    - Não são fáceis de um humano lidar
+    - Não são fáceis para a máquina lidar
+        - Uso excessivo de memória
+        - minifiers não conseguem minificar os métodos e tem dificuldade de saber o que é usado o que não é
+    - Reusando a lógica
+    - Componentes gigantes
+    - Classes confusas 
+
+- Hooks
+    - Usar todas features do React sem classes
+    - Lógicas reusáveis entre componentes
+    - Pode trabalhar junto com classes    
+
+- useState
+    - código mais limpo
+    - programação funcional
+    - Detalhes
+        - Não usar condicionalmente
+        - A ordem dos hooks afeta
+        -  
+    - Não precisa usar o this       
+
+- useContext
+    - Remove a necessidade de nesting
+
+- useEffect
+    - Substituem componentDidMount, componentDidUpdate componentWillUnmount
+    - Por default roda no início e a cada update de state
+    - Precisa estar dentro do component
+    - return function para componentWillUnmount
+    - Ordem do useEffect afeta ( deve estar depois da declaração do seu useState )
+    - Segundo argumento é um array do que esse useEffect se "importa"
+    - Sem condições ( ama incondicionalmente n )
+
+- useReducer
+    - [state, dispatch]
+
+- useRef
+
+- Externalizar o useEffect para ser usado em outras partes
+    - Por convenção custom hooks começam com use ( bom para lints )
+
+
+
+- Loupe
