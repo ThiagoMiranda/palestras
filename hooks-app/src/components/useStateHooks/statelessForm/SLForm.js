@@ -34,7 +34,7 @@ export default function StatefullForm() {
     useWindowEffect()
 
     return (
-        <div className='container'>
+        <div className='stateless-component'>
             <form className='form'>
                 <div className='input-wrapper'>
                     <label htmlFor='company'>Empresa:</label>

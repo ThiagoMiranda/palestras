@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #d7d4cb;
+  padding: 16px 0;
+}
+
+header nav a {
+  margin-left: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #26405e;
+  text-transform: uppercase;
+}
+header nav a:first-child {
+  margin-left: 0;
+}
+header nav a:hover {
+  color: #31abd9;
+}
+header nav a.current_item {
+  color: #31abd9;
+}

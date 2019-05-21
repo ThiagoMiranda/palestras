@@ -1,0 +1,56 @@
+.statefull-component .form {
+  background-color: beige;
+}
+
+.stateless-component .form {
+  background-color: burlywood;
+}
+
+.form {
+    margin: 10px;
+    
+    border-radius: 3px;
+    padding: 1.8em;
+  }
+ 
+  .input-wrapper {
+   flex: 1; 
+   order: 1;
+   margin-right: 2em; 
+  }
+ 
+  .input-wrapper input {
+    width: 100%;
+  }
+ 
+  .input-wrapper input,
+  .input-wrapper button {
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+ 
+  .input-wrapper button {
+   background: gray;
+   color: white;
+   border: 0;
+   cursor: pointer;
+   border-radius: 5px;
+  }
+ 
+  .input-wrapper.footer {
+   display: inline-flex;
+   width: 100%;
+   flex-direction: row;
+   justify-content: space-between;
+   align-content: center;
+  }
+ 
+  .removeButton {
+   background: red;
+   font-weight: bold;
+   border: 0;
+   padding: 1em;
+   margin: 1em;
+   cursor: pointer;
+   border-radius: 5px;
+  }
