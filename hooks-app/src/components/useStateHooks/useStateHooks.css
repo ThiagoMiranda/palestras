@@ -45,12 +45,4 @@
    align-content: center;
   }
  
-  .removeButton {
-   background: red;
-   font-weight: bold;
-   border: 0;
-   padding: 1em;
-   margin: 1em;
-   cursor: pointer;
-   border-radius: 5px;
-  }
+ 

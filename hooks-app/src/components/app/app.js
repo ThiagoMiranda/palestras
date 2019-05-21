@@ -4,6 +4,8 @@ import './app.css';
 
 import Header from './header'
 import ToggleState from '../../routes/toggleState'
+import Carousel from '../../routes/carousel'
+import Extra from '../../routes/extra'
 
 export default class App extends Component {
 
@@ -13,7 +15,10 @@ export default class App extends Component {
       <Router>
         <Header />
         <div className='container'>
+          <Route exact path='/' component={() => <h1>React Components e Hooks!</h1>} />
           <Route path='/toggleState' component={ToggleState} />
+          <Route path='/carousel' component={Carousel} />
+          <Route path='/extra' component={Extra} />
         </div>
       </Router>
     )

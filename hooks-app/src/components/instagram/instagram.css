@@ -1,0 +1,12 @@
+.container__instlogin a {
+    background-color: #c32aa3;
+    padding: 5px 44px;
+    flex-grow: 1;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: none;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+  }
