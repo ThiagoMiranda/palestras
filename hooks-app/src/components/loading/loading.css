@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Muli");
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    transform: translate(0%, -50%);
+  }
+
+  1% {
+    opacity: 1;
+    transform: translate(0%, -50%);
+  }
+
+  5% {
+    opacity: 1;
+    transform: translate(0%, -50%);
+  }
+
+  40% {
+    opacity: 1;
+    transform: translate(100%, -50%);
+  }
+
+  41% {
+    opacity: 0;
+    transform: translate(100%, -50%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(0%, -50%);
+  }
+}
+
+@keyframes fog {
+  0% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.loading-typography {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  overflow: hidden;
+  width: auto;
+  color: #a2a2a2;
+  font-size: 32px;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  font-family: "Muli", "Century Gothic", sans-serif;
+}
+
+.loading-typography p {
+  animation: fog 2500ms infinite;
+}
+
+.loading-typography::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  display: block;
+  padding-bottom: 25%;
+  width: 125%;
+  left: 0;
+  top: 50%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 1) 37.5%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-radius: 100px;
+  animation: sweep 2500ms infinite;
+  animation-timing-function: cubic-bezier(0.42, 0.56, 0.62, 0.54);
+  transform: translate(0, -50%);
+}
