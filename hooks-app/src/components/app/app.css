@@ -4,11 +4,11 @@ body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 1.7em;
+  overflow: hidden;
 }
 
 .container {
   margin: 20px;
-  display: inline-flex;
   flex: 1;
   align-items: center;
   justify-content: center;

@@ -19,6 +19,7 @@ export default withRouter(function({ location: { hash } }) {
             RequestJsonp(`${SEARCH_URL}${access_token}`, ({ data }) => {
                 setLoading(false)
                 setData(data)
+                console.info(data)
             })
         }
     }, [hash])
@@ -28,7 +29,7 @@ export default withRouter(function({ location: { hash } }) {
 
             { !hash && <Instagram /> }
             { loading  && <Loading /> }
-            { data.length > 0 && <Carousel />}
+            { data.length > 0 && <Carousel data={data} />}
         </>
     )
 })
