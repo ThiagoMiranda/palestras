@@ -13,7 +13,6 @@ import './carousel.css'
 // }
 
 function parseImg(data) {
-    console.info('parsei')
     return data.map(({ id, images: { thumbnail, standard_resolution }, tags }) => 
         (<img key={id} src={standard_resolution.url} alt={tags.join('')} />))
 }

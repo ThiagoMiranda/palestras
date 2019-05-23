@@ -13,21 +13,24 @@ export default withRouter(function({ location: { hash } }) {
     const [data, setData] = useState([])
 
     useEffect(() => {
+        let ignore = false
         if (hash) {
             const access_token = hash.replace('#access_token=', '')
             setLoading(true)
             RequestJsonp(`${SEARCH_URL}${access_token}`, ({ data }) => {
-                setLoading(false)
-                setData(data)
-                console.info(data)
+                if (!ignore) {
+                    setLoading(false)
+                    setData(data)
+                }
             })
+            return () => { ignore = true }
         }
     }, [hash])
 
     return (
         <>
 
-            { !hash && <Instagram /> }
+            { !hash && data.length === 0 && <Instagram /> }
             { loading  && <Loading /> }
             { data.length > 0 && <Carousel data={data} />}
         </>
