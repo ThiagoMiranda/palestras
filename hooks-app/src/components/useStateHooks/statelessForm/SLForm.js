@@ -7,7 +7,7 @@ function useWindowEffect() {
         const onChangeWindowWidth = () => setWindowWidth(window.innerWidth)
         window.addEventListener('resize', onChangeWindowWidth)
         return () => window.removeEventListener('resize', onChangeWindowWidth)
-    }, [windowWidth])
+    }, [])
 
     return windowWidth
 }
@@ -30,8 +30,6 @@ export default function StatefullForm() {
     const cnpj = useFormInput('')
     const address = useFormInput('')
     const windowWidth = useWindowEffect()
-
-    useWindowEffect()
 
     return (
         <div className='stateless-component'>

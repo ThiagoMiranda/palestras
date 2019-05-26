@@ -14,7 +14,7 @@ import './carousel.css'
 
 function parseImg(data) {
     return data.map(({ id, images: { thumbnail, standard_resolution }, tags }) => 
-        (<img key={id} src={standard_resolution.url} alt={tags.join('')} />))
+        (<img key={id} src={standard_resolution.url} alt={tags.join(' , ')} />))
 }
 
 export default function({ data }) {

@@ -55,6 +55,13 @@ Glauber e Thiago:
 
 UPDATE 19/05
 
+Bibliografia:
+- https://github.com/reactjs/rfcs/pull/68#issuecomment-439314884
+- https://medium.freecodecamp.org/why-react-hooks-and-how-did-we-even-get-here-aa5ed5dc96af
+- https://twitter.com/notphanan/status/1131070702583468032
+- https://twitter.com/dan_abramov/status/1055705350555353088
+- https://reactjs.org/docs/hooks-rules.html
+
 - Wrapper hell
 - Problemas com classes
     - Não são fáceis de um humano lidar
