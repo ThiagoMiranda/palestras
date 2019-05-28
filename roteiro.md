@@ -106,6 +106,6 @@ Bibliografia:
 - Externalizar o useEffect para ser usado em outras partes
     - Por convenção custom hooks começam com use ( bom para lints )
 
-
+- whyDidYouRender
 
 - Loupe
