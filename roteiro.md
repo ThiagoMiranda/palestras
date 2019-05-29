@@ -75,7 +75,8 @@ Bibliografia:
 - Hooks
     - Usar todas features do React sem classes
     - Lógicas reusáveis entre componentes
-    - Pode trabalhar junto com classes    
+    - Pode trabalhar junto com classes  
+    - break change apenas no mindset  
 
 - useState
     - código mais limpo
