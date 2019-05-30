@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Interpig from '../../components/extra/interpig'
+
 export default function() {
-    return (<div>Extra</div>)
+    return (<Interpig/>)
 }

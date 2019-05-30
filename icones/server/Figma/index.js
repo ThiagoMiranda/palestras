@@ -59,16 +59,14 @@ class InterFigma {
             return acc
         }, [])
         const svgIds = vectorList.map(item => item.id)
-        
         this.createCategoriesFolders()
-        readFiles('svg', this.getSvgBody)
-        //  await this.getSvgsURLs(svgIds, vectorList)
-        //  await this.getSvgsBodies()
+        await this.getSvgsURLs(svgIds, vectorList)
+        await this.getSvgsBodies()
+        this.callback(this.svgBodyMap)
     }
 
     createCategoriesFolders = () => {
         this.categories.forEach(item => createFolder(`lib/${item}`))
-        
     }
 
     getSvgsURLs = async (svgIds, vectorList) => {
