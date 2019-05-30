@@ -4,7 +4,7 @@ body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 1.7em;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container {

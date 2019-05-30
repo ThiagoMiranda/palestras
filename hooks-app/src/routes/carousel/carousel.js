@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom'
 
 import Instagram from '../../components/instagram'
 import Carousel from '../../components/carousel'
+import CarouselClass from '../../components/carousel/carouselclass'
 import Loading from '../../components/loading'
 import { RequestJsonp } from '../../utils'
 
@@ -33,6 +34,7 @@ export default withRouter(function({ location: { hash } }) {
             { !hash && data.length === 0 && <Instagram /> }
             { loading  && <Loading /> }
             { data.length > 0 && <Carousel data={data} />}
+            { data.length > 0 && <CarouselClass data={data} />}
         </>
     )
 })
