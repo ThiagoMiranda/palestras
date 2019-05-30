@@ -8,15 +8,21 @@ body {
 }
 
 .container {
+  display: flex;
   margin: 20px;
   flex: 1;
   align-items: center;
   justify-content: center;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .container h1 {
   text-align: center;
   color: #9999FF;
   font-size: 48px;
+}
+
+.container img {
+  align-self: center;
 }

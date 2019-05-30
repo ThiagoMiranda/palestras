@@ -7,6 +7,8 @@ import ToggleState from '../../routes/toggleState'
 import Carousel from '../../routes/carousel'
 import Extra from '../../routes/extra'
 
+import logo from '../../assets/images/palestra.png'
+
 export default class App extends Component {
 
   render() {
@@ -15,7 +17,14 @@ export default class App extends Component {
       <Router>
         <Header />
         <div className='container'>
-          <Route exact path='/' component={() => <h1>React Components e Hooks!</h1>} />
+          <Route exact path='/' component={() => {
+            return (
+              <>
+                <h1>React Components e Hooks!</h1>
+                <img src={logo} />
+              </>
+            )
+          }} />
           <Route path='/toggleState' component={ToggleState} />
           <Route path='/carousel' component={Carousel} />
           <Route path='/extra' component={Extra} />
