@@ -38,7 +38,7 @@
     "@babel/plugin-transform-react-jsx": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/register": "^7.0.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "chalk": "^2.4.1",
     "nodemon": "^1.10.0",
     "svgo": "^1.0.5"
